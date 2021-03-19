@@ -1,12 +1,10 @@
-package com.softserve.function;
-
 import java.util.List;
 import java.util.Scanner;
 
-public class Communicator implements Input, Print {
+public class ArmCommunicator implements Print<List<Integer>>, Input<Integer>  {
     private final Scanner scanner = new Scanner(System.in);
 
-    public Communicator() { }
+    public ArmCommunicator() { }
 
     @Override
     public Integer getInput() {
